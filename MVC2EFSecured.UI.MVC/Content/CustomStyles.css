@@ -1,0 +1,164 @@
+﻿/*This is my custom stylesheet for my formatting and to override ANY other styles.  This reference should be 
+the last stylesheet referenced in the Head of the Layout.*/
+
+.registerFormContainer {
+    border: 3px solid #535BA0;
+    box-shadow:20px 20px darkgray;
+    padding:3em 1em;
+    width:60%;
+    margin:auto;
+}
+/*Override the appearance of checkboxes - set default values*/
+input[type="checkbox"] {
+    opacity: 1;
+    -webkit-appearance: checkbox;
+    display: inline;
+    float: none;
+    margin-right: 0;
+}
+
+/*this will style ALL h2 directly inside the MainContent DIV (layout)
+    the :First-Child would style only EACH 1st element nested inside of a DIV */
+
+#mainContent > h2 /*:first-child*/
+{
+    text-align: center;
+}
+
+img
+{
+    width:auto;
+}
+
+/*remove the draggable corner from ALL textarea inputs*/
+textarea
+{
+    resize:none;
+}
+
+/*Styling for Authors Details,Create, and Edit*/
+#aContainer
+{
+    border: 3px solid #535BA0;
+    box-shadow: 15px 15px darkgray;
+    padding:1em;
+    width:50%;
+    margin:auto;
+}
+#aHeader
+{
+    font-size:2em;
+    text-align:center;
+}
+#aContentLeft
+{
+    float:left;
+    width:49%;
+    font-weight:700;
+    text-align:right;
+}
+#aContentRight
+{
+    margin-left:50%;
+}
+#aFooterLeft
+{
+    float:left;
+    width:49%;
+}
+#aFooterRight
+{
+    margin-left:50%;
+    text-align:right;
+}
+
+/*Books Details, Create, and Edit Formatting*/
+#bContainer
+{
+    border: 3px solid #535BA0;
+    box-shadow: 15px 15px darkgray;
+    padding: 1em;
+}
+#bHeader
+{
+    font-size:1.25em;
+    font-weight:700;
+    text-align:center;
+}
+#bLeft
+{
+    float:left;
+    width:36%;
+}
+#bRight
+{
+    margin-left:37%;
+}
+#bFooterLeft
+{
+    float:left;
+    width:49%;
+}
+#bFooterRight
+{
+    margin-left:50%;
+    text-align:right;
+}
+/*Create and Edit Changes*/
+#bContainer label
+{
+    font-weight:700;
+}
+#bContainer input[type="text"], 
+#bContainer input[type="number"],
+#bContainer input[type="datetime"],
+#bContainer select
+{
+    max-width:50%;
+    display:inline-block;
+}
+textarea#Description
+{
+    height:10em;
+}
+
+#bRight.editCreate
+{
+    margin-top:1em;
+    text-align:right;
+    line-height:2em;
+}
+
+/*Genres*/
+.gContainer
+{
+    height: 150px;
+    border: 3px solid #535BA0;
+    box-shadow: 5px 5px;
+    padding: 1em;
+    width: 31%;
+    float: left;
+    margin: .5em;
+    position: relative;/*For absolute positioning below*/
+}
+.gContent
+{
+    text-align:center;
+    font-size:2em;
+}
+.gFooterLeft
+{
+    position:absolute;
+    bottom:.5em;
+    left: .5em;
+}
+.gFooterRight
+{
+    position: absolute;
+    bottom: .5em;
+    right: .5em;
+}
+    .gFooterRight a
+    {
+        color:red;
+    }
