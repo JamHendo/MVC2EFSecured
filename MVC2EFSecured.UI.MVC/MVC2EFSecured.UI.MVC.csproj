@@ -177,6 +177,7 @@
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\AdminViewModel.cs" />
+    <Compile Include="Models\ContactViewModel.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -369,6 +370,7 @@
     <Content Include="_Archive\vendor\jquery\jquery.min.map" />
     <Content Include="_Archive\vendor\jquery\jquery.slim.min.map" />
     <Content Include="Views\Shared\_Layout_Original.cshtml" />
+    <Content Include="Views\Home\EmailConfirmation.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -58,7 +58,7 @@
                         <li><a href="@Url.Action("Index", "Authors")">Authors</a></li>
                         <li><a href="@Url.Action("Index", "Publishers")">Publishers</a></li>
                         <li><a href="#">Magazines</a></li>
-                        @if (User.IsInRole("Admin"))
+                        @if (User.IsInRole("Admin") && Request.IsAuthenticated)
                         {
                             <li>
                                 <span class="opener">Admin Features</span>
@@ -132,6 +132,7 @@
     <script src="~/Content/assets/js/transition.js"></script>
     <script src="~/Content/assets/js/owl-carousel.js"></script>
     <script src="~/Content/assets/js/custom.js"></script>
+    @RenderSection("scripts", required: false)
 </body>
 
 </html>
